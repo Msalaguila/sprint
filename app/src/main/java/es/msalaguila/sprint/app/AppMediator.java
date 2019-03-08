@@ -1,6 +1,8 @@
-package es.msalaguila.sprint;
+package es.msalaguila.sprint.app;
 
 import android.app.Application;
+
+import es.msalaguila.sprint.PantallaState;
 
 public class AppMediator extends Application {
 

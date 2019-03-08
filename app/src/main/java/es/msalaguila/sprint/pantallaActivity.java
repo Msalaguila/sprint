@@ -23,6 +23,8 @@ public class PantallaActivity
 
         // do the setup
         PantallaScreen.configure(this);
+
+        // configurar botones
         counterButton = findViewById(R.id.contadorButton);
         counterTextView = findViewById(R.id.contadorTextView);
     }
