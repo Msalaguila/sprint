@@ -1,10 +1,12 @@
-package es.msalaguila.sprint;
+package es.msalaguila.sprint.pantalla;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import es.msalaguila.sprint.R;
 
 public class PantallaActivity
         extends AppCompatActivity implements PantallaContract.View {
@@ -51,6 +53,7 @@ public class PantallaActivity
         //Log.e(TAG, "displayData()");
 
         // deal with the data
-        counterTextView.setText(viewModel.numero);
+        String numero = Integer.toString(viewModel.numero);
+        counterTextView.setText(numero);
     }
 }

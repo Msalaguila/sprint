@@ -1,4 +1,4 @@
-package es.msalaguila.sprint;
+package es.msalaguila.sprint.pantalla;
 
 public class PantallaModel implements PantallaContract.Model {
 
@@ -13,7 +13,7 @@ public class PantallaModel implements PantallaContract.Model {
     @Override
     public void incrementNum(){
         this.numero++;
-        if(numero > 9){
+        if(numero > 9) {
             numero = 0;
         }
     }

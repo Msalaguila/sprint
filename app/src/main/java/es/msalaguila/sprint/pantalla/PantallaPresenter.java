@@ -1,4 +1,4 @@
-package es.msalaguila.sprint;
+package es.msalaguila.sprint.pantalla;
 
 import java.lang.ref.WeakReference;
 

@@ -1,8 +1,10 @@
-package es.msalaguila.sprint;
+package es.msalaguila.sprint.pantalla;
 
 import java.lang.ref.WeakReference;
 
 import android.support.v4.app.FragmentActivity;
+
+import es.msalaguila.sprint.app.AppMediator;
 
 public class PantallaScreen {
 

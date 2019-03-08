@@ -1,7 +1,9 @@
-package es.msalaguila.sprint;
+package es.msalaguila.sprint.pantalla;
 
 import android.content.Intent;
 import android.content.Context;
+
+import es.msalaguila.sprint.app.AppMediator;
 
 public class PantallaRouter implements PantallaContract.Router {
 
