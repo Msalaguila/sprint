@@ -20,10 +20,12 @@ interface PantallaContract {
         void addButtonPressed();
 
         void goResetButtonPressed();
+
     }
 
     interface Model {
         int incrementNum();
+
     }
 
     interface Router {
