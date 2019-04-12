@@ -19,11 +19,15 @@ interface Pantalla2Contract {
 
     void injectRouter(Router router);
 
-    void fetchData();
+    void loadDataPreviousScreen();
+
+    void onResetButtonPressed();
   }
 
   interface Model {
-    String fetchData();
+    int loadTotalNumber();
+
+    void resetTotalNumber();
   }
 
   interface Router {
@@ -31,6 +35,6 @@ interface Pantalla2Contract {
 
     void passDataToNextScreen(Pantalla2State state);
 
-    PantallaState getDataFromPreviousScreen();
+    Pantalla2State getDataFromPreviousScreen();
   }
 }

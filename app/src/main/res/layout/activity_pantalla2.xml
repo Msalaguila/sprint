@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="489dp"
+        android:onClick="onResetButtonPressed"
         android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/contadorTotalTextView"

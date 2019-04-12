@@ -33,14 +33,14 @@ public class Pantalla2Presenter implements Pantalla2Contract.Presenter {
   }
 
   @Override
-  public void fetchData() {
-    // Log.e(TAG, "fetchData()");
+  public void loadDataPreviousScreen() {
 
-    // set passed state
+  }
 
-    // update the view
-    view.get().displayData(viewModel);
-
+  @Override
+  public void onResetButtonPressed() {
+    model.resetTotalNumber();
+    router.navigateToNextScreen();
   }
 
 

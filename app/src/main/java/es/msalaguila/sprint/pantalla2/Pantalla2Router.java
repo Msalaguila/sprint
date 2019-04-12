@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.Context;
 
 import es.msalaguila.sprint.app.AppMediator;
+import es.msalaguila.sprint.pantalla.PantallaActivity;
+import es.msalaguila.sprint.pantalla.PantallaState;
 
 public class Pantalla2Router implements Pantalla2Contract.Router {
 
@@ -19,7 +21,7 @@ public class Pantalla2Router implements Pantalla2Contract.Router {
   @Override
   public void navigateToNextScreen() {
     Context context = mediator.getApplicationContext();
-    Intent intent = new Intent(context, Pantalla2Activity.class);
+    Intent intent = new Intent(context, PantallaActivity.class);
     context.startActivity(intent);
   }
 
