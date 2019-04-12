@@ -28,7 +28,6 @@ public class Pantalla2Activity
 
     pantalla2TextView = findViewById(R.id.contadorTotalTextView);
     resetButton = findViewById(R.id.resetButton);
-
     presenter.loadDataPreviousScreen();
   }
 
@@ -47,4 +46,6 @@ public class Pantalla2Activity
   public void onResetButtonPressed(View view){
     presenter.onResetButtonPressed();
   }
+
+
 }

@@ -19,9 +19,15 @@ public class Pantalla2Model implements Pantalla2Contract.Model {
     this.repository = repository;
   }
 
+
   @Override
-  public String fetchData() {
-    // Log.e(TAG, "fetchData()");
-    return "Hello";
+  public int loadTotalNumber() {
+    int numeroTotal = repository.getTotalNumber();
+    return numeroTotal;
+  }
+
+  @Override
+  public void resetTotalNumber() {
+    repository.resetearContador();
   }
 }

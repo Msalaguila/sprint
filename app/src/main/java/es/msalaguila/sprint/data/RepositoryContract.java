@@ -5,4 +5,6 @@ public interface RepositoryContract {
   int sumarContador();
 
   int resetearContador();
+
+  int getTotalNumber();
 }

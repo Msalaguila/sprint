@@ -8,14 +8,7 @@ public class Repository implements RepositoryContract {
 
   private Context context;
   private int contador = 0;
-
-  public int getContador() {
-    return contador;
-  }
-
-  public void setContador(int contador) {
-    this.contador = contador;
-  }
+  private int contadorTotal = 0;
 
   public static RepositoryContract getInstance(Context context) {
     if(INSTANCE == null){
@@ -32,12 +25,22 @@ public class Repository implements RepositoryContract {
   @Override
   public int sumarContador() {
     contador++;
+    contadorTotal = contador;
+    if(contador > 9){
+      contador = 0;
+    }
     return contador;
   }
 
   @Override
   public int resetearContador() {
     contador = 0;
+    contadorTotal = contador;
     return contador;
+  }
+
+  @Override
+  public int getTotalNumber() {
+    return contadorTotal;
   }
 }

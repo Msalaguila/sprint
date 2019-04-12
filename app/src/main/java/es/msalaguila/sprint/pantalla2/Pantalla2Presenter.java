@@ -34,7 +34,9 @@ public class Pantalla2Presenter implements Pantalla2Contract.Presenter {
 
   @Override
   public void loadDataPreviousScreen() {
-
+    int totalNumber = model.loadTotalNumber();
+    viewModel.totalNumber = totalNumber;
+    view.get().displayData(viewModel);
   }
 
   @Override
