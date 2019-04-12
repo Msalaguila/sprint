@@ -41,7 +41,8 @@ public class Pantalla2Activity
     //Log.e(TAG, "displayData()");
 
     // deal with the data
-    pantalla2TextView.setText(viewModel.totalNumber);
+    String totalNumber = Integer.toString(viewModel.totalNumber);
+    pantalla2TextView.setText(totalNumber);
   }
 
   public void onResetButtonPressed(View view){
