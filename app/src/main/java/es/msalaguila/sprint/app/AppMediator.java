@@ -29,4 +29,5 @@ public class AppMediator extends Application {
     public void setPantalla2State(Pantalla2State state) {
         this.pantalla2State = state;
     }
+
 }

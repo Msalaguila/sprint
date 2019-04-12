@@ -5,6 +5,7 @@ import android.content.Context;
 
 import es.msalaguila.sprint.app.AppMediator;
 import es.msalaguila.sprint.pantalla2.Pantalla2Activity;
+import es.msalaguila.sprint.pantalla2.Pantalla2State;
 
 public class PantallaRouter implements PantallaContract.Router {
 
@@ -29,8 +30,8 @@ public class PantallaRouter implements PantallaContract.Router {
     }
 
     @Override
-    public PantallaState getDataFromPreviousScreen() {
-        PantallaState state = mediator.getpantallaState();
+    public Pantalla2State getDataFromPreviousScreen() {
+        Pantalla2State state = mediator.getPantalla2State();
         return state;
     }
 }

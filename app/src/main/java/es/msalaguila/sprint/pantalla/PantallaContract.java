@@ -2,6 +2,8 @@ package es.msalaguila.sprint.pantalla;
 
 import java.lang.ref.WeakReference;
 
+import es.msalaguila.sprint.pantalla2.Pantalla2State;
+
 interface PantallaContract {
 
     interface View {
@@ -33,6 +35,6 @@ interface PantallaContract {
 
         void passDataToNextScreen(PantallaState state);
 
-        PantallaState getDataFromPreviousScreen();
+        Pantalla2State getDataFromPreviousScreen();
     }
 }

@@ -25,7 +25,7 @@ public class Repository implements RepositoryContract {
   @Override
   public int sumarContador() {
     contador++;
-    contadorTotal = contador;
+    contadorTotal++;
     if(contador > 9){
       contador = 0;
     }

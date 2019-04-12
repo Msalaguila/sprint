@@ -33,8 +33,6 @@ public class PantallaActivity
         goResetButton = findViewById(R.id.goResetButton);
     }
 
-
-
     @Override
     public void injectPresenter(PantallaContract.Presenter presenter) {
         this.presenter = presenter;
