@@ -31,19 +31,16 @@ public class PantallaPresenter implements PantallaContract.Presenter {
     }
 
     @Override
-    public void fetchData() {
-        // Log.e(TAG, "fetchData()");
-
-        // set passed state
-        // update the view
-        view.get().displayData(viewModel);
+    public void addButtonPressed() {
+       int numero = model.incrementNum();
+       viewModel.numero = numero;
+       view.get().displayData(viewModel);
     }
 
     @Override
-    public void buttonPressed() {
-        model.incrementNum();
-        viewModel.numero = model.getNumero();
-        view.get().displayData(viewModel);
+    public void goResetButtonPressed() {
+        router.navigateToNextScreen();
     }
+
 
 }

@@ -17,6 +17,7 @@ public class PantallaActivity
 
     private Button counterButton;
     private TextView counterTextView;
+    private Button goResetButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,19 +30,10 @@ public class PantallaActivity
         // configurar botones
         counterButton = findViewById(R.id.contadorButton);
         counterTextView = findViewById(R.id.contadorTextView);
+        goResetButton = findViewById(R.id.goResetButton);
     }
 
-    public void buttonPressed(View view){
-        presenter.buttonPressed();
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        // do some work
-        presenter.fetchData();
-    }
 
     @Override
     public void injectPresenter(PantallaContract.Presenter presenter) {
@@ -55,5 +47,13 @@ public class PantallaActivity
         // deal with the data
         String numero = Integer.toString(viewModel.numero);
         counterTextView.setText(numero);
+    }
+
+    public void addButtonPressed(View view) {
+        presenter.addButtonPressed();
+    }
+
+    public void goResetButtonPressed(View view) {
+        presenter.goResetButtonPressed();
     }
 }

@@ -1,32 +1,23 @@
 package es.msalaguila.sprint.pantalla;
 
+import es.msalaguila.sprint.data.Repository;
+import es.msalaguila.sprint.data.RepositoryContract;
+
 public class PantallaModel implements PantallaContract.Model {
 
     public static String TAG = PantallaModel.class.getSimpleName();
 
-    private int numero;
+    private RepositoryContract repository;
 
-    public PantallaModel() {
+    public PantallaModel(RepositoryContract repository) {
         //
-        this.numero = 0;
+        this.repository = repository;
     }
 
-    @Override
-    public void incrementNum(){
-        this.numero++;
-        if(numero > 9) {
-            numero = 0;
-        }
-    }
 
     @Override
-    public int getNumero(){
+    public int incrementNum() {
+        int numero = repository.sumarContador();
         return numero;
-    }
-
-    @Override
-    public String fetchData() {
-        // Log.e(TAG, "fetchData()");
-        return "Hello";
     }
 }

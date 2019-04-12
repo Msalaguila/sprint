@@ -17,15 +17,13 @@ interface PantallaContract {
 
         void injectRouter(Router router);
 
-        void fetchData();
+        void addButtonPressed();
 
-        void buttonPressed();
+        void goResetButtonPressed();
     }
 
     interface Model {
-        String fetchData();
-        void incrementNum();
-        int getNumero();
+        int incrementNum();
     }
 
     interface Router {

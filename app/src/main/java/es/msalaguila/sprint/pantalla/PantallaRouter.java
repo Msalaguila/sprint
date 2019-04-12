@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.Context;
 
 import es.msalaguila.sprint.app.AppMediator;
+import es.msalaguila.sprint.pantalla2.Pantalla2Activity;
 
 public class PantallaRouter implements PantallaContract.Router {
 
@@ -18,7 +19,7 @@ public class PantallaRouter implements PantallaContract.Router {
     @Override
     public void navigateToNextScreen() {
         Context context = mediator.getApplicationContext();
-        Intent intent = new Intent(context, PantallaActivity.class);
+        Intent intent = new Intent(context, Pantalla2Activity.class);
         context.startActivity(intent);
     }
 

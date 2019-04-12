@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".pantalla.PantallaActivity">
 
     <TextView
         android:id="@+id/contadorTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="68dp"
         android:gravity="center"
         android:text="TextView"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/contadorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/contadorButton"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="159dp"
+        android:onClick="addButtonPressed"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/goResetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contadorTextView" />
+
+    <Button
+        android:id="@+id/goResetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:onClick="buttonPressed"
-        android:text="Button"
-        android:textAlignment="center" />
-</LinearLayout>
+        android:layout_marginBottom="232dp"
+        android:onClick="goResetButtonPressed"
+        android:text="Go Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contadorButton" />
+</android.support.constraint.ConstraintLayout>
