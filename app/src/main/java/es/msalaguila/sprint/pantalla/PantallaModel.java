@@ -7,6 +7,7 @@ public class PantallaModel implements PantallaContract.Model {
     private int numero;
 
     public PantallaModel() {
+        //
         this.numero = 0;
     }
 
