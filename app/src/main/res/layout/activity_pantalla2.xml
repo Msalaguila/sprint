@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".pantalla2.Pantalla2Activity">
 
     <TextView
         android:id="@+id/contadorTotalTextView"
         android:layout_width="136dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="47dp"
+        android:layout_height="40dp"
         android:text="TextView"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/resetButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="489dp"
+        android:layout_marginTop="30dp"
         android:onClick="onResetButtonPressed"
-        android:text="Reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/contadorTotalTextView"
-        app:layout_constraintTop_toBottomOf="@+id/contadorTotalTextView" />
-</android.support.constraint.ConstraintLayout>
+        android:text="Reset" />
+</LinearLayout>

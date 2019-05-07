@@ -31,6 +31,8 @@ public class PantallaActivity
         counterButton = findViewById(R.id.contadorButton);
         counterTextView = findViewById(R.id.contadorTextView);
         goResetButton = findViewById(R.id.goResetButton);
+
+        presenter.fetchData();
     }
 
     @Override

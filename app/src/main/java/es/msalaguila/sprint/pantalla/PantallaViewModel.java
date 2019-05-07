@@ -2,5 +2,5 @@ package es.msalaguila.sprint.pantalla;
 
 public class PantallaViewModel {
 
-    public int numero;
+    public int numero = 0;
 }

@@ -23,11 +23,13 @@ interface PantallaContract {
 
         void goResetButtonPressed();
 
+        void fetchData();
     }
 
     interface Model {
         int incrementNum();
 
+        boolean checkState();
     }
 
     interface Router {
